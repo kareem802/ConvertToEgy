@@ -1,0 +1,165 @@
+* {
+    font-family: 'montserrat';
+}
+
+
+body{
+    padding-top: 1rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 75.5vh;
+    margin-top: 5rem;
+}
+
+#logo {
+    width: 2rem;
+    position: relative;
+    bottom: -6px;
+    margin-left: 2rem;
+    margin-right: .25rem;
+}
+
+#logo-text {
+    display: inline;
+    font-size: 2rem;
+}
+
+h1, h4{
+    text-align: center;
+}
+
+h1 {
+    color: #112D4E;
+}
+
+h4 {
+    color: #6e88a2 ;
+    margin-bottom: 2rem;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.card {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 10px ;
+}
+
+.card > input {
+    border-radius: 3px;
+    border: 1px solid #b7cbf0;
+    width: 14rem;
+}
+
+.select-list {
+    border: 1px solid #3f71af94; 
+    border-radius: 3px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 14.5rem;
+}
+
+
+#foreign-input {
+    order: 4;
+}
+
+.currency-title {
+    order: 3;
+    border: 1px solid #3f71af94; 
+    border-radius: 3px;
+    height: 3rem;
+    text-align: center;
+    margin: 0;
+    line-height: 3rem;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.image-container {
+    grid-row: span 2;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-section img {
+    width: 60px;
+    object-fit: contain;    
+}
+
+footer {
+    margin-top: auto; 
+    background-color: #112D4E;
+    width: 100%;    
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 30px;
+}
+
+@media (max-width: 850px) {
+    html {
+        font-size: 13px;
+    }
+
+    .mid-section {
+        margin-bottom: 17rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .card {
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;  
+        width: 80% !important;
+    }
+
+    .mid-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .image-container {
+        grid-row: span 1;
+    }
+
+    input {
+        min-width: 99%;
+    }
+
+    #foreign-input {
+        order: 1;
+    }
+
+    .currency-title {
+        height: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .select-list {
+        width: 100%;
+    }
+}
